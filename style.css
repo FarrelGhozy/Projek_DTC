@@ -56,7 +56,13 @@ body {
 .homepage {
   display: flex;
   flex-direction: row;
-  margin: 100px 50px;
+  align-items: center;
+  justify-content: center; /* Tengah secara horizontal */
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 500px;
+  box-sizing: border-box;
 }
 
 .contact {
@@ -66,7 +72,7 @@ body {
 
 .contact a {
   margin-right: 10px;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
   color: #000000;
   font-size: 13px;
@@ -75,32 +81,56 @@ body {
 
 .hero-section {
   flex: 1;
-  padding: 20px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+  padding-left: 0;
 }
+
 .hero-section h1 {
-  font-size: 36px;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .hero-section p {
   font-size: 18px;
   color: #666666;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-image img {
-  margin-top: 20px;
-  max-width: 20%;
+  max-width: 80%; /* Lebih fleksibel */
   height: auto;
-  margin-right: 40px;
+  margin-right: 0;
+  padding-left: 0;
 }
 
 .hero {
   background-color: #48dbfb;
-  padding: 80px 5% 10%;
+  padding: 130px 5% 10%;
   position: relative;
   overflow: hidden;
 }
 
-.homepage {
-  margin: 40px;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
