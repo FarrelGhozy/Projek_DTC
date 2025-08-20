@@ -1,12 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: #000000;
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  height: 1650px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
 }
 
 .navbar {
@@ -77,6 +94,7 @@ body {
   color: #000000;
   font-size: 13px;
   text-align: center;
+  font-weight: 600;
 }
 
 .hero-section {
@@ -84,23 +102,23 @@ body {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  padding-left: 0;
+  padding-right: 300px;
 }
 
 .hero-section h1 {
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .hero-section p {
   font-size: 18px;
-  color: #666666;
+  color: #000000;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
 }
@@ -122,15 +140,12 @@ body {
 
 .hero {
   background-color: #48dbfb;
-  padding: 130px 5% 10%;
+  padding: 120px 5% 10%;
   position: relative;
   overflow: hidden;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+.about,
+.service {
+  margin: 0 30px 0 30px;
 }
