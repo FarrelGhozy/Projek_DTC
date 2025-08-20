@@ -56,8 +56,27 @@ body {
 .homepage {
   display: flex;
   flex-direction: row;
+  margin: 100px 50px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact a {
+  margin-right: 10px;
+  padding: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
+}
+
+.hero-section {
+  flex: 1;
+  padding: 20px;
+}
 .hero-section h1 {
   font-size: 36px;
   margin-bottom: 10px;
@@ -72,4 +91,16 @@ body {
   margin-top: 20px;
   max-width: 20%;
   height: auto;
+  margin-right: 40px;
+}
+
+.hero {
+  background-color: #48dbfb;
+  padding: 80px 5% 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage {
+  margin: 40px;
 }
