@@ -67,7 +67,9 @@ header h3 {
 
 .content {
   color: black;
-  padding: 20px;
+  margin: 0px;
+  background-color: rgb(215, 242, 254);
+  padding: 20;
 }
 
 .homepage {
@@ -109,11 +111,19 @@ header h3 {
 }
 
 .hero-section h1 {
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
   font-style: normal;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  width: 450px;
+}
+.hero-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 0cqmax;
+  margin-bottom: 20px;
 }
 
 .hero-section p {
@@ -139,7 +149,7 @@ header h3 {
 }
 
 .hero {
-  background-color: #48dbfb;
+  background-color: #00d0ff;
   padding: 120px 5% 10%;
   position: relative;
   overflow: hidden;
@@ -147,5 +157,107 @@ header h3 {
 
 .about,
 .service {
-  margin: 0 30px 0 30px;
+  margin: 0 40px 0 40px;
+}
+.about h2,
+.service h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about {
+  margin-top: 50px;
+}
+
+.about-DTC {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about-DTC h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  font-style: normal;
+}
+
+.about-D {
+  margin-bottom: 20px;
+  width: 700px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: aqua;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-T {
+  margin-bottom: 20px;
+  width: 700px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: aqua;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-C {
+  margin-bottom: 20px;
+  width: 700px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: aqua;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.vision h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.footer {
+  background-color: #113563;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .socials {
+  margin-top: 10px;
+}
+
+.footer .socials a {
+  margin: 0 10px;
 }
