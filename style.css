@@ -84,19 +84,30 @@ header h3 {
   box-sizing: border-box;
 }
 
-.contact {
+.hero {
+  background-color: #37acff;
+  padding: 120px 5% 10%;
+  position: relative;
+  overflow: hidden;
+  height: 700px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+.bg-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.15;
+  /* Hapus width dan height di sini */
+  display: block;
 }
 
-.contact a {
-  margin-right: 10px;
-  padding: 20px;
-  text-decoration: none;
-  color: #000000;
-  font-size: 13px;
-  text-align: center;
-  font-weight: 600;
+.bg-logo img {
+  width: 1000px; /* Atur ukuran gambar */
+  height: auto;
+  display: block;
 }
 
 .hero-section {
@@ -108,51 +119,72 @@ header h3 {
   align-items: center;
   height: 100%;
   padding-right: 300px;
+  margin-right: 200px;
+  margin-top: 50px;
 }
 
 .hero-section h1 {
-  font-size: 45px;
+  font-size: 75px;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 0;
-  width: 450px;
+  width: 800px;
+  text-align: center;
 }
 .hero-section h2 {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600;
-  color: #000000;
-  margin-top: 0cqmax;
+  color: #18658f;
+  margin-top: 10px;
   margin-bottom: 20px;
+  text-align: center;
+  width: 800px;
 }
 
 .hero-section p {
-  font-size: 18px;
-  color: #000000;
+  font-size: 25px;
+  color: #ffffff;
   font-style: normal;
   font-family: "Montserrat", sans-serif;
+  width: 800px;
+  text-align: center;
+  font-weight: 500;
 }
 
 .hero-image {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 100%;
 }
 
 .hero-image img {
-  max-width: 80%; /* Lebih fleksibel */
+  max-width: 200%;
   height: auto;
-  margin-right: 0;
-  padding-left: 0;
+  margin-bottom: 0px;
+  margin-left: 200px;
+  margin-top: 300px;
 }
 
-.hero {
-  background-color: #00d0ff;
-  padding: 120px 5% 10%;
-  position: relative;
-  overflow: hidden;
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact a {
+  margin: 10px;
+  margin-top: 110px;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  width: 400px;
+  background-color: #113563;
+  border-radius: 10px;
 }
 
 .about,
@@ -166,7 +198,22 @@ header h3 {
   margin-bottom: 20px;
 }
 .about {
-  margin-top: 50px;
+  margin-top: 75px;
+}
+
+.about h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+  font-style: bold;
+}
+.about p {
+  text-align: left;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .about-DTC {
@@ -176,50 +223,29 @@ header h3 {
 }
 
 .about-DTC h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   font-style: normal;
+}
+.about-DTC p {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
 }
 
 .about-D {
   margin-bottom: 20px;
   width: 700px;
-  height: 250px;
+  height: 410px;
   margin: 10px;
-  border-radius: 25px;
+  border-radius: 15px;
   text-align: center;
-  background-color: aqua;
-  padding: 10px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about-T {
-  margin-bottom: 20px;
-  width: 700px;
-  height: 250px;
-  margin: 10px;
-  border-radius: 25px;
-  text-align: center;
-  background-color: aqua;
-  padding: 10px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-C {
-  margin-bottom: 20px;
-  width: 700px;
-  height: 250px;
-  margin: 10px;
-  border-radius: 25px;
-  text-align: center;
-  background-color: aqua;
+  background-color: rgb(28, 58, 107);
   padding: 10px;
   align-items: center;
   display: flex;
@@ -232,13 +258,72 @@ header h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .vision h3 {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 0px;
+}
+.vision p {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.our-staff {
+  margin-top: 50px;
+  display: flex;
+}
+
+.our-staff-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.personal {
+  height: 600px;
+  width: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00d0ff;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+}
+
+.personal img {
+  width: 275px;
+  height: 200px;           /* Atur tinggi agar gambar ter-crop */
+  object-fit: cover;       /* Crop gambar, isi frame */
+  object-position: center; /* Crop bagian tengah gambar */
+  border-radius: 10px;     /* Sudut membulat (frame) */
+  border: 4px solid #fff;  /* Frame putih di sekeliling gambar */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); /* Efek frame bayangan */
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: black;
+}
+
+.personal h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.personal p {
+  margin: 5px 0;
+  padding: 15px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .footer {
@@ -261,3 +346,158 @@ header h3 {
 .footer .socials a {
   margin: 0 10px;
 }
+
+/* --- Tambahkan di bagian paling bawah file CSS --- */
+/* @media (max-width: 1200px) {
+  .homepage {
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 400px;
+    padding: 0 10px;
+  }
+  .hero-section, .hero-section h1, .hero-section h2, .hero-section p {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .hero-image img {
+    margin-left: 0;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .contact a {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .about-D {
+    width: 100%;
+    height: auto;
+  }
+  .personal img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .logo h3 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .hero {
+    padding: 80px 2% 5%;
+    height: auto;
+    flex-direction: column;
+  }
+  .hero-section h1 {
+    font-size: 40px;
+  }
+  .hero-section h2 {
+    font-size: 24px;
+  }
+  .hero-section p {
+    font-size: 16px;
+  }
+  .bg-logo img {
+    width: 300px;
+  }
+  .about-D {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .personal {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .personal img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 16px;
+  }
+  .navbar {
+    padding: 5px 5px;
+  }
+  .logo img {
+    width: 20px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  .hero {
+    padding: 40px 2% 2%;
+    height: auto;
+    flex-direction: column;
+  }
+  .hero-section h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+  .hero-section h2 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .hero-section p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .bg-logo img {
+    width: 150px;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact a {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .about, .service {
+    margin: 0 10px 0 10px;
+  }
+  .about h2, .service h2 {
+    font-size: 20px;
+  }
+  .about-D {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .personal {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .personal img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .footer-content {
+    padding: 0 5px;
+  }
+} */
+
+/* --- End responsive section --- */
