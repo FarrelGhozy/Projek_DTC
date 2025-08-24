@@ -181,10 +181,12 @@ header h3 {
   color: #ffffff;
   font-size: 18px;
   text-align: center;
+  align-items: center;
   font-weight: 600;
-  width: 400px;
+  width: 370px;
+  height: 20px;
   background-color: #113563;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 .about,
@@ -222,12 +224,19 @@ header h3 {
   margin-top: 40px;
 }
 
+.about-DTC img {
+  width: 200px;
+  height: 200px;
+  margin: 30px 20px 10px 20px;
+}
+
 .about-DTC h4 {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 800;
   color: #ffffff;
   margin: 0;
   font-style: normal;
+  margin-top: 10px;
 }
 .about-DTC p {
   text-align: center;
@@ -236,6 +245,7 @@ header h3 {
   font-weight: 400;
   font-style: normal;
   padding: 15px;
+  padding-top: 0;
 }
 
 .about-D {
@@ -243,14 +253,15 @@ header h3 {
   width: 700px;
   height: 410px;
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 30px;
   text-align: center;
-  background-color: rgb(28, 58, 107);
+  background-color: #37acff;
   padding: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .vision {
@@ -277,41 +288,69 @@ header h3 {
 
 .contact-personal {
   background-color: #37acff;
-  height: 850px;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-logo2 {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.25;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-logo2 img {
+  width: 1100px;
+  margin-top: 70px;
+  height: auto;
+  display: block;
 }
 
 .our-staff-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 5 0 0 0;
   text-align: center;
-  margin-top: 20px;
-  color: #113563;
-  padding-top: 15px;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .our-staff {
-  margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .personal {
-  height: 600px;
-  width: 245px;
-  margin-bottom: 40px;
+  height: auto;
+  min-width: 225px;
   display: flex;
   flex-direction: column;
+  flex-basis: calc(15% - 20px);
   align-items: center;
   background-color: #ffffff;
-  margin: 0 10px 0 10px;
+  margin: 0 0 0 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .personal img {
   display: block;
-  width: 225px;
-  height: 250px;
+  width: 200px;
+  height: 225px;
   object-fit: cover;
   margin: 10px;
   border-radius: 5px;
@@ -319,21 +358,81 @@ header h3 {
 }
 
 .personal h3 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
-  margin: 0;
+  margin: auto;
   height: 35px;
   width: 210px;
   text-align: center;
 }
 
 .personal p {
-  margin: 5px 0;
   padding: 15px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.service-card {
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  height: 550px;
+}
+.service-title {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 75px 0 20px 0;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  height: 700px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.service-card ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.service-card li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.service-card li::before {
+  content: "■";
+  color: #37acff;
+  margin-right: 10px;
+  font-size: 0.8rem;
 }
 
 .footer {
