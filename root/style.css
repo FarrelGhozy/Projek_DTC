@@ -293,6 +293,71 @@ header h3 {
   overflow: hidden;
 }
 
+.service-card {
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  height: 550px;
+}
+.service-title {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 75px 0 20px 0;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  height: 700px;
+}
+
+.bg-color {
+  background-color: #83c0ec;
+  padding: 40px 0;
+}
+
+.service-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.service-card ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.service-card li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.service-card li::before {
+  content: "■";
+  color: #37acff;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
 .bg-logo2 {
   position: absolute;
   z-index: 0;
@@ -373,66 +438,6 @@ header h3 {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 0;
-}
-
-.service-card {
-  background-color: #ffffff;
-  color: #333333;
-  border-radius: 10px;
-  padding: 20px;
-  flex-basis: 250px;
-  flex-grow: 1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 280px;
-  height: 550px;
-}
-.service-title {
-  text-align: center;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-  margin: 75px 0 20px 0;
-}
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  height: 700px;
-}
-
-.service-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.service-card h3 {
-  font-size: 1.25rem;
-  margin: 0 0 15px 0;
-  text-align: left;
-}
-
-.service-card ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
-}
-
-.service-card li {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.service-card li::before {
-  content: "■";
-  color: #37acff;
-  margin-right: 10px;
-  font-size: 0.8rem;
 }
 
 .footer {
