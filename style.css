@@ -176,12 +176,14 @@ section {
 .about > h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .about > p {
   max-width: 800px;
   margin: 0 auto 50px auto;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .about-DTC {
@@ -189,6 +191,7 @@ section {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .about-D {
@@ -214,9 +217,16 @@ section {
 
 .vision {
   margin-top: 80px;
+  padding-bottom: 30px;
 }
 .vision h3 {
   font-size: 1.8rem;
+}
+
+.vision p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 /* 5. SERVICES SECTION */
@@ -229,9 +239,9 @@ section {
 
 .service-title h2 {
   font-size: 2.5rem;
-  margin-bottom: 50px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .services {
@@ -251,7 +261,7 @@ section {
 
 .service-card img {
   width: 100%;
-  height: 200px; /* Tinggi gambar dibuat seragam */
+  height: 275px; /* Tinggi gambar dibuat seragam */
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -279,9 +289,10 @@ section {
 .our-staff-title h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  padding-top: 30px;
 }
 
 .our-staff {
@@ -295,6 +306,7 @@ section {
   position: relative;
   z-index: 1;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .personal {
@@ -306,6 +318,11 @@ section {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   height: 400px;
   width: 250px;
+  transition: transform 0.8s ease;
+}
+
+.personal:hover {
+  transform: scale(1.1);
 }
 
 .personal img {
